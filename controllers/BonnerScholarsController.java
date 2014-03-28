@@ -46,8 +46,6 @@ public class BonnerScholarsController {
 	@Resource(name="communityServiceProgramService")
 	private CommunityServiceProgramService communityServiceProgramService;
 	
-	//@Resource(name="bonnerScholarsLinesService")
-	//private BonnerScholarsLinesService bonnerScholarsLinesService;
 		
 	/**
 	 * Retrieves the "Records" page
