@@ -1,4 +1,3 @@
-
 package org.celts.db.controller;
 
 import java.util.ArrayList;
@@ -95,76 +94,11 @@ public class BonnerScholarsController {
    //public String getAdd(@RequestParam("id") Integer studentVolunteerId, Model model) {
     	logger.debug("Received request to show add page");
     
-   	/*
-      	// Retrieve all semesters
-    	List<Semesters> semesters = semesterService.getAll();
-    	
-    	// Prepare model object
-    	List<SemestersDTO> semesterDTO = new ArrayList<SemestersDTO>();
-    	
-    	for (Semesters semester: semesters) {
-    	
-    		SemestersDTO dto = new SemestersDTO();
-    		dto.setId(semester.getId());
-    		dto.setSem(semester.getSem());
-    		//dto.setYr(semester.getYr());
-    		
-    		semesterDTO.add(dto);
-    	}
-    	
-    	
-      	// Retrieve all semesters
-    	List<Years> years = yearService.getAll20122013();
-    	
-    	// Prepare model object
-    	List<YearsDTO> yearDTO = new ArrayList<YearsDTO>();
-    	
-    	for (Years year: years) {
-    	
-    		YearsDTO dto = new YearsDTO();
-    		dto.setId(year.getId());
-    		dto.setYr(year.getYr());
-    		
-    		yearDTO.add(dto);
-    	}
-    	
-    	
-    	
-      	// Retrieve all semesters
-    	List<CommunityServiceProgram> communityServiceProgram = communityServiceProgramService.getAll();
-    	
-    	// Prepare model object
-    	List<CommunityServiceProgramDTO> communityServiceProgramDTO = new ArrayList<CommunityServiceProgramDTO>();
-    	
-    	for (CommunityServiceProgram communityServicePrograms: communityServiceProgram) {
-    	
-    		CommunityServiceProgramDTO dto = new CommunityServiceProgramDTO();
-    		dto.setId(communityServicePrograms.getId());
-    		dto.setProg(communityServicePrograms.getProg());
-    		//dto.setYr(semester.getYr());
-    		
-    		communityServiceProgramDTO.add(dto);
-    	}
-    	
-    */	
+   
      	// Create new StudentVolunteer and add to model
     	model.addAttribute("bonnerScholarsAttribute", new BonnerScholars());
     	
-    /*	// Prepare model object
-       	StudentLines studentLines = new StudentLines();
-    	studentLines.setStudentVolunteer(studentVolunteerService.get(studentVolunteerId));
-   	
-    	// Add to model
-    	model.addAttribute("studentLinesAttribute", studentLines);
-
-    	
-    	model.addAttribute("semesters", semesterDTO);
-    	
-    	model.addAttribute("years", yearDTO);
-    	
-    	model.addAttribute("communityServiceProgram", communityServiceProgramDTO);
-    	
-*/
+  
     	// This will resolve to /WEB-INF/jsp/add-student-volunteer.jsp
     	return "add-bonner-scholars";
     	
