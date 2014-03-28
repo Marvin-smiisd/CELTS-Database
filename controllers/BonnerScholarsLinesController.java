@@ -141,26 +141,7 @@ public class BonnerScholarsLinesController {
     	return "add-semEntry-semdDepature-and-prog";
 	}
  
-    /**
-     * Adds a new Student Lines
-     */
- /*  @RequestMapping(value = "/addBnr", method = RequestMethod.POST)
-    public String postAddBnr(@RequestParam("id") Integer bonnerScholarsId, 
-    						    @ModelAttribute("bonnerScholarsLinesAttribute") BonnerScholarsLines bonnerScholarsLines) {
-		logger.debug("Received request to add new student line");
-		
-		// Delegate to service
-		bonnerScholarsLinesService.add(bonnerScholarsId, bonnerScholarsLines);
-
-		// Redirect to url
-		return "redirect:/bnrSchlr/bnrScholars";
-	}
-    
-    */
-    
-    
-    
-    
+   
     
     /**
      * Adds a new Student Lines
